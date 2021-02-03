@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fei.music.ui.fragment.MainFragment"
+        android:label="main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_to_search"
+            app:destination="@id/searchFragment" />
+
+        <action
+            android:id="@+id/action_to_login"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.fei.music.ui.fragment.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fei.music.ui.fragment.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+
+</navigation>

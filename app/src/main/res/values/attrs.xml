@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PlayerView">
+        <attr name="isCircleDraw" format="boolean"></attr>
+        <attr name="circleAlpha" format="integer"></attr>
+        <attr name="backgroundColor" format="reference|color"></attr>
+        <attr name="drawableColor" format="reference|color"></attr>
+    </declare-styleable>
+
+</resources>
